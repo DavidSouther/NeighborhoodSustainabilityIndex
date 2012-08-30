@@ -84,6 +84,8 @@
    /* Class constructor */
    function pImage($XSize,$YSize,$DataSet=NULL,$TransparentBackground=FALSE)
     {
+     $this->FontName = Kohana::find_file('vendors', "pchart/fonts/GeosansLight", "ttf");
+
      $this->TransparentBackground = $TransparentBackground;
 
      if ( $DataSet != NULL ) { $this->DataSet = $DataSet; }
